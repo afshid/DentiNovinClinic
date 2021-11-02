@@ -1,0 +1,202 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, span, a, table, td, form, img, li {
+	margin: 0px; 
+	padding: 0px;
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+	color: #2c4f7c;
+}
+
+html, body {
+	background: url(images/gradient.png) top left repeat-x #fefefe;
+	font-size: 11px;
+	color: #000000;
+}
+
+img {
+	border: 0px;
+}
+
+table {
+	/*border: 1px solid red;*/
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+#container {
+	margin: 0px auto;
+	width: 1000px;
+}
+
+dd.published {
+	text-decoration: none;
+	font-size: 10pt;
+	color: #7d8fb6;
+}
+
+ul.lang-inline {
+	text-align: right;
+}
+
+/* --- Email Form --- */
+
+div.foxcontainer {
+	padding-left: 4px;
+}
+
+input.foxtext, input.invalidfoxtext {
+	margin-bottom: 7px;
+}
+
+textarea.foxtext, textarea.invalidfoxtext {
+	margin-top: 1px;
+	margin-bottom: 7px;
+}
+
+select.foxtext, select.validfoxtext {
+	margin-bottom: 6px;
+	height: 22px !important;
+	position: inherit !important;
+	opacity: 1 !important;
+}
+
+span.defaultfoxfield, span.validfoxfield {
+	display: none !important;
+}
+
+button.foxbutton {
+	margin-left: 129px;
+}
+
+/* --- Main Menu --- */
+
+ul.menu {
+	padding-bottom: 1px;
+}
+
+ul.menu li {
+	list-style: none;
+	display: inline;
+	padding-left: 6px;
+	padding-right: 7px;
+	background: URL(images/main-menu-separator.png) right center no-repeat;
+}
+
+ul.menu li.item-161 {
+	padding-right: 0px;
+	background: transparent;
+}
+
+ul.menu a {
+	color: #5070b0;
+	text-decoration: none;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+ul.menu a:hover {
+	color: #fe5500;
+	text-decoration: none !important;
+}
+
+div#footer table {
+	background-color: #99cdf4;
+}
+
+/* --- Shadowbox Media Viewer --- */
+
+#sb-loading-inner span {
+	color: #a0a0a0;
+}
+
+#sb-title-inner {
+	font-weight: bold;
+}
+
+#sb-counter {
+	color: white;
+}
+
+/* --- News --- */
+
+div.category-list {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* --- Testimonials --- */
+
+div.blog {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+div.blog table {
+	width: 100%;
+}
+
+div.blog div.pagination {
+	margin: 0px;
+}
+
+/* --- Joomla pagination --- */
+
+div.pagination {
+	text-align: center;
+	margin: 0px 7px;
+	padding: 15px 0px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #6697ce;
+}
+
+div.pagination span {
+	margin: 4px;
+}
+
+div.pagination a {
+	margin: 5px;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 11pt;
+	color: #fe5500;
+}
+
+div.pagination a:link {
+	text-decoration: none;
+	color: #fe5500;
+}
+
+div.pagination a:visited {
+	text-decoration: none;
+	color: #fe5500;
+}
+
+div.pagination a:hover {
+	text-decoration: underline;
+	color: #fe5500;
+}
+
+div.pagination strong a {
+	margin: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11pt;
+	color: #fe5500;
+}
+
+div.pagination strong a:link {
+	text-decoration: none;
+	color: #fe5500;
+}
+
+div.pagination strong a:visited {
+	text-decoration: none;
+	color: #fe5500;
+}
+
+div.pagination strong a:hover {
+	text-decoration: underline;
+	color: #fe5500;
+}

@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEA0E593-B18A-4022-BC92-348DF5E358AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DentiNovin</RootNamespace>
+    <AssemblyName>DentiNovin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\DentiClinic.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\DentiClinic.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DentiNovinTutorials\images\DentiNovin.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2009.2.500.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2009.2.500.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2009.2.500.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2009.2.500.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ToolBox, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\ToolBox.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.5.0.15095, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDLLs\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssuranceReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssuranceReportForm.Designer.cs">
+      <DependentUpon>AssuranceReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssuranceServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssuranceServiceForm.Designer.cs">
+      <DependentUpon>AssuranceServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClasses\BaseStyledControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\DataGridViewComplexCell.cs" />
+    <Compile Include="BaseClasses\DateTimeCollection.cs" />
+    <Compile Include="BaseClasses\DateTimeCollectionEditor.cs" />
+    <Compile Include="BaseClasses\Delegates.cs" />
+    <Compile Include="BaseClasses\Enums.cs" />
+    <Compile Include="BaseClasses\FileReadWrite.cs" />
+    <Compile Include="BaseClasses\FilterTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\SerializationTester.cs" />
+    <Compile Include="BaseClasses\SystemInfo.cs" />
+    <Compile Include="BillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillForm.Designer.cs">
+      <DependentUpon>BillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillListForm.Designer.cs">
+      <DependentUpon>BillListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillPaymentForm.Designer.cs">
+      <DependentUpon>BillPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillReportForm.Designer.cs">
+      <DependentUpon>BillReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MNMCurrencyText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MNMCurrencyText.Designer.cs">
+      <DependentUpon>MNMCurrencyText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MNMImagePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MNMImagePicker.Designer.cs">
+      <DependentUpon>MNMImagePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DateBarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DateBarControl.Designer.cs">
+      <DependentUpon>DateBarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MNMColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MNMColorPicker.Designer.cs">
+      <DependentUpon>MNMColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SerialBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SerialBox.designer.cs">
+      <DependentUpon>SerialBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\AssuranceDS.cs">
+      <DependentUpon>AssuranceDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\AssuranceDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssuranceDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ReportsDataSet.cs">
+      <DependentUpon>ReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DentiReportsMakerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DentiReportsMakerForm.Designer.cs">
+      <DependentUpon>DentiReportsMakerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Popup\ControlUtils.cs" />
+    <Compile Include="Controls\Popup\Delegates.cs" />
+    <Compile Include="Controls\Popup\HookInfo.cs" />
+    <Compile Include="Controls\Popup\HookManager.cs" />
+    <Compile Include="Controls\Popup\HookPopup.cs" />
+    <Compile Include="Controls\Popup\IHookController.cs" />
+    <Compile Include="Controls\Popup\IPopupServiceControl.cs" />
+    <Compile Include="BaseClasses\PainterBase.cs" />
+    <Compile Include="BaseClasses\UtilMethods.cs" />
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseWinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseWinForm.designer.cs">
+      <DependentUpon>BaseWinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientList.Designer.cs">
+      <DependentUpon>PatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PatientListSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PatientListSearch.Designer.cs">
+      <DependentUpon>PatientListSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Popup\PopupContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Popup\Shadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Popup\TopFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Popup\Win32\Enums.cs" />
+    <Compile Include="Controls\Popup\Win32\Structs.cs" />
+    <Compile Include="Controls\Popup\Win32\User32.cs" />
+    <Compile Include="Controls\Popup\WinPopupController.cs" />
+    <Compile Include="Controls\AppointmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AppointmentControl.Designer.cs">
+      <DependentUpon>AppointmentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToothChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ToothChart.Designer.cs">
+      <DependentUpon>ToothChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToothView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ToothView.Designer.cs">
+      <DependentUpon>ToothView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToothViewContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\VisitTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\BillReportDS.cs">
+      <DependentUpon>BillReportDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BillReportDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillReportDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PatientTreatmentDS.cs">
+      <DependentUpon>PatientTreatmentDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PatientTreatmentDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientTreatmentDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DentiReportsViewrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DentiReportsViewrForm.Designer.cs">
+      <DependentUpon>DentiReportsViewrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientAssuranceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientAssuranceForm.Designer.cs">
+      <DependentUpon>PatientAssuranceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrescriptionForm.Designer.cs">
+      <DependentUpon>PrescriptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiddleBaseWinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientTreatmentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientTreatmentDetails.Designer.cs">
+      <DependentUpon>PatientTreatmentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrescriptionListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrescriptionListForm.Designer.cs">
+      <DependentUpon>PrescriptionListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentForm.Designer.cs">
+      <DependentUpon>AppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorForm.designer.cs">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClasses\FormSingleton.cs" />
+    <Compile Include="AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertForm.Designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupForm.Designer.cs">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotifierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotifierForm.Designer.cs">
+      <DependentUpon>NotifierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientForm.Designer.cs">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientListDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientListDock.Designer.cs">
+      <DependentUpon>PatientListDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootCanalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RootCanalForm.Designer.cs">
+      <DependentUpon>RootCanalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPatientForm.Designer.cs">
+      <DependentUpon>SearchPatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicePickup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicePickup.Designer.cs">
+      <DependentUpon>ServicePickup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X-RayDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X-RayDock.Designer.cs">
+      <DependentUpon>X-RayDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XRayImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XRayImageForm.Designer.cs">
+      <DependentUpon>XRayImageForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssuranceReportForm.resx">
+      <DependentUpon>AssuranceReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssuranceServiceForm.resx">
+      <DependentUpon>AssuranceServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillForm.resx">
+      <DependentUpon>BillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillListForm.resx">
+      <DependentUpon>BillListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillPaymentForm.resx">
+      <DependentUpon>BillPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillReportForm.resx">
+      <DependentUpon>BillReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DateBarControl.resx">
+      <DependentUpon>DateBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MNMCurrencyText.resx">
+      <DependentUpon>MNMCurrencyText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SerialBox.resx">
+      <DependentUpon>SerialBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DentiReportsMakerForm.resx">
+      <DependentUpon>DentiReportsMakerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AppointmentControl.resx">
+      <DependentUpon>AppointmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VisitTable.resx">
+      <DependentUpon>VisitTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DentiReportsViewrForm.resx">
+      <DependentUpon>DentiReportsViewrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientAssuranceForm.resx">
+      <DependentUpon>PatientAssuranceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrescriptionForm.resx">
+      <DependentUpon>PrescriptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientTreatmentDetails.resx">
+      <DependentUpon>PatientTreatmentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrescriptionListForm.resx">
+      <DependentUpon>PrescriptionListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForm.resx">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AssuranceVisitReport.rdlc" />
+    <EmbeddedResource Include="Reports\BillDetailsReport.rdlc" />
+    <EmbeddedResource Include="Reports\BillTreatmentDetailsReport.rdlc" />
+    <EmbeddedResource Include="Reports\PatientBillReport.rdlc" />
+    <EmbeddedResource Include="Reports\PatientTreatmentReport.rdlc" />
+    <EmbeddedResource Include="AppointmentForm.resx">
+      <DependentUpon>AppointmentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorForm.resx">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlertForm.resx">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupForm.resx">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientForm.resx">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Data\ReportsDataSet.xsc">
+      <DependentUpon>ReportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\ReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\ReportsDataSet.xss">
+      <DependentUpon>ReportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DentiNovinTutorials\index.php" />
+    <None Include="Properties\DataSources\DentiClinic.Common.AssuranceReportHeader.datasource" />
+    <EmbeddedResource Include="RootCanalForm.resx">
+      <DependentUpon>RootCanalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPatientForm.resx">
+      <DependentUpon>SearchPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicePickup.resx">
+      <DependentUpon>ServicePickup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupForm.resx">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X-RayDock.resx">
+      <DependentUpon>X-RayDock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRayImageForm.resx">
+      <DependentUpon>XRayImageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data\AssuranceDS.xsc">
+      <DependentUpon>AssuranceDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\AssuranceDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssuranceDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\AssuranceDS.xss">
+      <DependentUpon>AssuranceDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\BillReportDS.xsc">
+      <DependentUpon>BillReportDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\BillReportDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BillReportDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\BillReportDS.xss">
+      <DependentUpon>BillReportDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\PatientTreatmentDS.xsc">
+      <DependentUpon>PatientTreatmentDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\PatientTreatmentDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientTreatmentDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\PatientTreatmentDS.xss">
+      <DependentUpon>PatientTreatmentDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\DentiClinic.Data.AssuranceDS.datasource" />
+    <None Include="Properties\DataSources\DentiClinic.Data.BillReportDS.datasource" />
+    <None Include="Properties\DataSources\DentiClinic.Data.PatientTreatmentDS.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupForm.Designer.cs">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentListDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentListDock.Designer.cs">
+      <DependentUpon>AppointmentListDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreatmentChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreatmentChartForm.Designer.cs">
+      <DependentUpon>TreatmentChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreatmentServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreatmentServiceForm.Designer.cs">
+      <DependentUpon>TreatmentServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreatmentServiceSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreatmentServiceSelector.Designer.cs">
+      <DependentUpon>TreatmentServiceSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccessForm.designer.cs">
+      <DependentUpon>UserAccessForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Report.mrt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseWinForm.resx">
+      <DependentUpon>BaseWinForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientList.resx">
+      <DependentUpon>PatientList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PatientListSearch.resx">
+      <DependentUpon>PatientListSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToothChart.resx">
+      <DependentUpon>ToothChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToothView.resx">
+      <DependentUpon>ToothView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToothViewContainer.resx">
+      <DependentUpon>ToothViewContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotifierForm.resx">
+      <DependentUpon>NotifierForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientListDock.resx">
+      <DependentUpon>PatientListDock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentListDock.resx">
+      <DependentUpon>AppointmentListDock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreatmentChartForm.resx">
+      <DependentUpon>TreatmentChartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreatmentServiceForm.resx">
+      <DependentUpon>TreatmentServiceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreatmentServiceSelector.resx">
+      <DependentUpon>TreatmentServiceSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccessForm.resx">
+      <DependentUpon>UserAccessForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\MNMDentiDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\MNMDentiDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>MNMDentiDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="DentiNovinTutorials.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DentiNovinTutorials\basetemplate.css" />
+    <Content Include="DentiNovinTutorials\caption.js" />
+    <Content Include="DentiNovinTutorials\core.js" />
+    <Content Include="DentiNovinTutorials\general.css" />
+    <Content Include="DentiNovinTutorials\images\br.gif" />
+    <Content Include="DentiNovinTutorials\images\calendar.png" />
+    <Content Include="DentiNovinTutorials\images\cn.gif" />
+    <Content Include="DentiNovinTutorials\images\content-left-top.png" />
+    <Content Include="DentiNovinTutorials\images\content-left.png" />
+    <Content Include="DentiNovinTutorials\images\content-right-top.png" />
+    <Content Include="DentiNovinTutorials\images\content-right.png" />
+    <Content Include="DentiNovinTutorials\images\de.gif" />
+    <Content Include="DentiNovinTutorials\images\DentiNovin.ico" />
+    <Content Include="DentiNovinTutorials\images\en.gif" />
+    <Content Include="DentiNovinTutorials\images\es.gif" />
+    <Content Include="DentiNovinTutorials\images\favicon.ico" />
+    <Content Include="DentiNovinTutorials\images\flash.png" />
+    <Content Include="DentiNovinTutorials\images\footer-center-bottom.png" />
+    <Content Include="DentiNovinTutorials\images\footer-left-bottom.png" />
+    <Content Include="DentiNovinTutorials\images\footer-left-top.png" />
+    <Content Include="DentiNovinTutorials\images\footer-left.png" />
+    <Content Include="DentiNovinTutorials\images\footer-right-bottom.png" />
+    <Content Include="DentiNovinTutorials\images\footer-right-top.png" />
+    <Content Include="DentiNovinTutorials\images\footer-right.png" />
+    <Content Include="DentiNovinTutorials\images\fr.gif" />
+    <Content Include="DentiNovinTutorials\images\gradient.png" />
+    <Content Include="DentiNovinTutorials\images\header-left.png" />
+    <Content Include="DentiNovinTutorials\images\header-right.png" />
+    <Content Include="DentiNovinTutorials\images\it.gif" />
+    <Content Include="DentiNovinTutorials\images\jp.gif" />
+    <Content Include="DentiNovinTutorials\images\j_button2_blank.png" />
+    <Content Include="DentiNovinTutorials\images\j_button2_image.png" />
+    <Content Include="DentiNovinTutorials\images\j_button2_left.png" />
+    <Content Include="DentiNovinTutorials\images\j_button2_pagebreak.png" />
+    <Content Include="DentiNovinTutorials\images\j_button2_readmore.png" />
+    <Content Include="DentiNovinTutorials\images\j_button2_right.png" />
+    <Content Include="DentiNovinTutorials\images\label-contact.png" />
+    <Content Include="DentiNovinTutorials\images\logo.png" />
+    <Content Include="DentiNovinTutorials\images\main-menu-separator.png" />
+    <Content Include="DentiNovinTutorials\images\ru.gif" />
+    <Content Include="DentiNovinTutorials\images\se.gif" />
+    <Content Include="DentiNovinTutorials\images\selector-arrow.png" />
+    <Content Include="DentiNovinTutorials\images\separator-center.png" />
+    <Content Include="DentiNovinTutorials\images\separator-left.png" />
+    <Content Include="DentiNovinTutorials\images\separator-right.png" />
+    <Content Include="DentiNovinTutorials\images\social-facebook.png" />
+    <Content Include="DentiNovinTutorials\images\social-linkedin.png" />
+    <Content Include="DentiNovinTutorials\images\social-rss.png" />
+    <Content Include="DentiNovinTutorials\images\social-twitter.png" />
+    <Content Include="DentiNovinTutorials\images\social-youtube.png" />
+    <Content Include="DentiNovinTutorials\images\title-970.png" />
+    <Content Include="DentiNovinTutorials\images\up-arrow2-hover.gif" />
+    <Content Include="DentiNovinTutorials\images\up-arrow2.gif" />
+    <Content Include="DentiNovinTutorials\images\youtube.png" />
+    <Content Include="DentiNovinTutorials\layout.css" />
+    <Content Include="DentiNovinTutorials\mootools-core.js" />
+    <Content Include="DentiNovinTutorials\mootools-more.js" />
+    <Content Include="DentiNovinTutorials\ScrollSpy-yui-compressed.js" />
+    <Content Include="DentiNovinTutorials\shadowbox.css" />
+    <Content Include="DentiNovinTutorials\system.css" />
+    <Content Include="DentiNovinTutorials\template.css" />
+    <None Include="Resources\DentiNovinLogo140.jpg" />
+    <None Include="Resources\DentiNovinLogo140-t.png" />
+    <None Include="Resources\calendar_Weekly3430.png" />
+    <None Include="Resources\calendar_Montly3230.png" />
+    <None Include="Resources\calendar_Weekly.png" />
+    <None Include="Resources\calendar_Montly.png" />
+    <None Include="Resources\Google-Chrome.ico" />
+    <None Include="Resources\DentiNovin.png" />
+    <None Include="Resources\patientList.png" />
+    <None Include="Resources\TreatmentBarTRed.png" />
+    <None Include="Resources\Treatment.png" />
+    <None Include="Resources\title-right.png" />
+    <None Include="Resources\title-left.png" />
+    <None Include="Resources\Time.png" />
+    <None Include="Resources\T-48.png" />
+    <None Include="Resources\T-47.png" />
+    <None Include="Resources\T-46.png" />
+    <None Include="Resources\T-45.png" />
+    <None Include="Resources\T-44.png" />
+    <None Include="Resources\T-43.png" />
+    <None Include="Resources\T-42.png" />
+    <None Include="Resources\T-41.png" />
+    <None Include="Resources\T-38.png" />
+    <None Include="Resources\T-37.png" />
+    <None Include="Resources\T-36.png" />
+    <None Include="Resources\T-35.png" />
+    <None Include="Resources\T-34.png" />
+    <None Include="Resources\T-33.png" />
+    <None Include="Resources\T-32.png" />
+    <None Include="Resources\T-31.png" />
+    <None Include="Resources\T-28.png" />
+    <None Include="Resources\T-27.png" />
+    <None Include="Resources\T-26.png" />
+    <None Include="Resources\T-25.png" />
+    <None Include="Resources\T-24.png" />
+    <None Include="Resources\T-23.png" />
+    <None Include="Resources\T-22.png" />
+    <None Include="Resources\T-21.png" />
+    <None Include="Resources\T-18.png" />
+    <None Include="Resources\T-17.png" />
+    <None Include="Resources\T-16.png" />
+    <None Include="Resources\T-15.png" />
+    <None Include="Resources\T-14.png" />
+    <None Include="Resources\T-13.png" />
+    <None Include="Resources\T-12.png" />
+    <None Include="Resources\T-11.png" />
+    <None Include="Resources\Search-iconnew323.png" />
+    <None Include="Resources\Search-iconnew322.png" />
+    <None Include="Resources\print-icon.png" />
+    <None Include="Resources\noPerson.png" />
+    <None Include="Resources\Login2.png" />
+    <None Include="Resources\important-y.ico" />
+    <None Include="Resources\important.png" />
+    <None Include="Resources\Implant.png" />
+    <None Include="Resources\images %2835%29.jpg" />
+    <None Include="Resources\drive-big-disk-icon.png" />
+    <None Include="Resources\disk-icon.png" />
+    <None Include="Resources\CT-45.png" />
+    <None Include="Resources\CT-44.png" />
+    <None Include="Resources\CT-43.png" />
+    <None Include="Resources\CT-42.png" />
+    <None Include="Resources\CT-41.png" />
+    <None Include="Resources\CT-35.png" />
+    <None Include="Resources\CT-34.png" />
+    <None Include="Resources\CT-33.png" />
+    <None Include="Resources\CT-32.png" />
+    <None Include="Resources\CT-31.png" />
+    <None Include="Resources\CT-25.png" />
+    <None Include="Resources\CT-24.png" />
+    <None Include="Resources\CT-23.png" />
+    <None Include="Resources\CT-22.png" />
+    <None Include="Resources\CT-21.png" />
+    <None Include="Resources\CT-15.png" />
+    <None Include="Resources\CT-14.png" />
+    <None Include="Resources\CT-13.png" />
+    <None Include="Resources\CT-12.png" />
+    <None Include="Resources\CT-11.png" />
+    <None Include="Resources\Copy of CT-14.png" />
+    <None Include="Resources\Copy of CT-13.png" />
+    <None Include="Resources\Copy of CT-12.png" />
+    <None Include="Resources\Copy of cd-icon.png" />
+    <None Include="Resources\Copy of Bill.png" />
+    <None Include="Resources\cd-icon.png" />
+    <None Include="Resources\Bill.png" />
+    <None Include="Resources\1341861726_old-view-refresh.png" />
+    <None Include="Resources\1341861702_Delete.png" />
+    <None Include="Resources\1341861653_Add.png" />
+    <None Include="Resources\visittimelist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DentiNovin.BusinessLogic\DentiNovin.BusinessLogic.csproj">
+      <Project>{8D2020C2-3853-49A9-B506-6045C6FF0488}</Project>
+      <Name>DentiNovin.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DentiNovin.Common\DentiNovin.Common.csproj">
+      <Project>{328F0820-63BD-403B-ADE6-326C2024B3B7}</Project>
+      <Name>DentiNovin.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DentiNovin.DataAccess\DentiNovin.DataAccess.csproj">
+      <Project>{BF545FA6-8E87-4163-A6FA-9E0C56614A45}</Project>
+      <Name>DentiNovin.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FADatePicker\MNMControls.FADatePicker.csproj">
+      <Project>{DC14D0CA-3176-4CB1-9C65-A623AFF2F43A}</Project>
+      <Name>MNMControls.FADatePicker</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DentiNovinTutorials\videos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

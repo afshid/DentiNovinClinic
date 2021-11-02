@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="4">
+      <PrescriptionMixedVisitHType1 Ref="2" type="DataTableSource" isKey="true">
+        <Alias>PrescriptionMixedVisitHType1</Alias>
+        <Columns isList="true" count="12">
+          <value>RowNumber,System.Int64</value>
+          <value>PrescriptionHrID,System.Int64</value>
+          <value>PatientFullName,System.String</value>
+          <value>AssuranceCode,System.String</value>
+          <value>ActionDate,System.String</value>
+          <value>ServiceName,System.String</value>
+          <value>Year,System.String</value>
+          <value>Month,System.Byte</value>
+          <value>IsVisitService,System.Boolean</value>
+          <value>HandBookID,System.Int16</value>
+          <value>ServicePrice,System.Decimal</value>
+          <value>OrganPercent,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>PrescriptionMixedVisitHType1</Name>
+        <NameInSource>ds1.PrescriptionMixedVisitHType1</NameInSource>
+      </PrescriptionMixedVisitHType1>
+      <PrescriptionMixedVisitHType2 Ref="3" type="DataTableSource" isKey="true">
+        <Alias>PrescriptionMixedVisitHType2</Alias>
+        <Columns isList="true" count="12">
+          <value>RowNumber,System.Int64</value>
+          <value>PrescriptionHrID,System.Int64</value>
+          <value>PatientFullName,System.String</value>
+          <value>AssuranceCode,System.String</value>
+          <value>ActionDate,System.String</value>
+          <value>ServiceName,System.String</value>
+          <value>Year,System.String</value>
+          <value>Month,System.Byte</value>
+          <value>IsVisitService,System.Boolean</value>
+          <value>HandBookID,System.Int16</value>
+          <value>ServicePrice,System.Decimal</value>
+          <value>OrganPercent,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>PrescriptionMixedVisitHType2</Name>
+        <NameInSource>ds1.PrescriptionMixedVisitHType2</NameInSource>
+      </PrescriptionMixedVisitHType2>
+      <PrescriptionMixedVisitHType3 Ref="4" type="DataTableSource" isKey="true">
+        <Alias>PrescriptionMixedVisitHType3</Alias>
+        <Columns isList="true" count="12">
+          <value>RowNumber,System.Int64</value>
+          <value>PrescriptionHrID,System.Int64</value>
+          <value>PatientFullName,System.String</value>
+          <value>AssuranceCode,System.String</value>
+          <value>ActionDate,System.String</value>
+          <value>ServiceName,System.String</value>
+          <value>Year,System.String</value>
+          <value>Month,System.Byte</value>
+          <value>IsVisitService,System.Boolean</value>
+          <value>HandBookID,System.Int16</value>
+          <value>ServicePrice,System.Decimal</value>
+          <value>OrganPercent,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>PrescriptionMixedVisitHType3</Name>
+        <NameInSource>ds1.PrescriptionMixedVisitHType3</NameInSource>
+      </PrescriptionMixedVisitHType3>
+      <PrescriptionMixedVisitHType4 Ref="5" type="DataTableSource" isKey="true">
+        <Alias>PrescriptionMixedVisitHType4</Alias>
+        <Columns isList="true" count="12">
+          <value>RowNumber,System.Int64</value>
+          <value>PrescriptionHrID,System.Int64</value>
+          <value>PatientFullName,System.String</value>
+          <value>AssuranceCode,System.String</value>
+          <value>ActionDate,System.String</value>
+          <value>ServiceName,System.String</value>
+          <value>Year,System.String</value>
+          <value>Month,System.Byte</value>
+          <value>IsVisitService,System.Boolean</value>
+          <value>HandBookID,System.Int16</value>
+          <value>ServicePrice,System.Decimal</value>
+          <value>OrganPercent,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>PrescriptionMixedVisitHType4</Name>
+        <NameInSource>ds1.PrescriptionMixedVisitHType4</NameInSource>
+      </PrescriptionMixedVisitHType4>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="6" type="Page" isKey="true">
+      <Border>All;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="8">
+        <Panel1 Ref="7" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.1,0.1,7.32,0.79</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text3 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.1,0.2,4.72,0.39</ClientRectangle>
+              <ComponentPlacement>p.Panel1</ComponentPlacement>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,16,Bold</Font>
+              <Guid>5d5d20f407d845b8abd06381c1c49724</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>فرم فهرست نسخ خدمات پزشکان و دندانپزشکان همکار</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat isNull="true" />
+            </Text3>
+            <Text2 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,1.3,0.3</ClientRectangle>
+              <ComponentPlacement>p.Panel2</ComponentPlacement>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,14,Bold</Font>
+              <Guid>82771cb2303a43b994a489bbaa0b2873</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>06 FM 03 00</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat isNull="true" />
+            </Text2>
+            <Text1 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0,0.9,0.3</ClientRectangle>
+              <ComponentPlacement>p.Panel2</ComponentPlacement>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,14,Bold</Font>
+              <Guid>5802e66713004a29a46aa8e1188a78e3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <Text>کد مدرک</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat isNull="true" />
+            </Text1>
+            <StartPointPrimitive1 Ref="11" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>1.3,0,0,0</ClientRectangle>
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <ReferenceToGuid>97a5e5c5421f4565bea15409dd2748c6</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <EndPointPrimitive1 Ref="12" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>1.31,0.8,0,0</ClientRectangle>
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="6" />
+              <Parent isRef="7" />
+              <ReferenceToGuid>97a5e5c5421f4565bea15409dd2748c6</ReferenceToGuid>
+            </EndPointPrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>5f98af8e20c34340babf08015c9cda17</Guid>
+          <Name>Panel1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </Panel1>
+        <Text4 Ref="13" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.3,1.2,0.9,0.3</ClientRectangle>
+          <ComponentPlacement>p.Page1</ComponentPlacement>
+          <Conditions isList="true" count="0" />
+          <Font>B Zar,12,Bold</Font>
+          <Guid>244bef564a6d40cca9d1e04828aeeff8</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Text>نوع صندوق :</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat isNull="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <VertAlignment>Center</VertAlignment>
+        </Text4>
+        <Text6 Ref="14" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.1,1.7,1.1,0.3</ClientRectangle>
+          <ComponentPlacement>p.Page1</ComponentPlacement>
+          <Conditions isList="true" count="0" />
+          <Font>B Zar,12,Bold</Font>
+          <Guid>5d34d7a37c3d4182b0df0f9b909c201f</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Text>فهرست نسخ ماه :</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat isNull="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <VertAlignment>Center</VertAlignment>
+        </Text6>
+        <HeaderKhadamatServiceReport_Row Ref="15" type="Text" isKey="true">
+          <Border>All;Black;2;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.7,2.3,0.47,0.32</ClientRectangle>
+          <ComponentPlacement>h.ap.HeaderKhadamatServiceReport</ComponentPlacement>
+          <Conditions isList="true" count="0" />
+          <Font>B Zar,12,Bold</Font>
+          <Guid>5522531f1fc04cc183ba2117ee39f00e</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>HeaderKhadamatServiceReport_Row</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Text>ردیف</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat isNull="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <VertAlignment>Center</VertAlignment>
+        </HeaderKhadamatServiceReport_Row>
+        <HeaderKhadamatServiceReport_Name Ref="16" type="Text" isKey="true">
+          <Border>All;Black;2;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.3,2.3,1.42,0.32</ClientRectangle>
+          <ComponentPlacement>h.ap.HeaderKhadamatServiceReport</ComponentPlacement>
+          <Conditions isList="true" count="0" />
+          <Font>B Zar,12,Bold</Font>
+          <Guid>4f9aa37dd53844a29a25ab56422c8c8e</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>HeaderKhadamatServiceReport_Name</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Text>نام و نام خانوادگی</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat isNull="true" />
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <VertAlignment>Center</VertAlignment>
+        </HeaderKhadamatServiceReport_Name>
+        <TextInCells1 Ref="17" type="Stimulsoft.Report.Components.StiTextInCells" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.6,2.7,2.7,0.5</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>TextInCells1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Text>{PrescriptionMixedVisitHType1.PatientFullName}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+        </TextInCells1>
+        <Text5 Ref="18" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5,3.4,1.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Text>{PrescriptionMixedVisitHType1.PatientFullName}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+        </Text5>
+        <VerticalLinePrimitive1 Ref="19" type="Stimulsoft.Report.Components.StiVerticalLinePrimitive" isKey="true">
+          <ClientRectangle>1.4,0.1,0.01,0.8</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>97a5e5c5421f4565bea15409dd2748c6</Guid>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </VerticalLinePrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>152d843665104f4cbcbbb80dbf7dd490</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <Page isRef="6" />
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="20" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="21" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/17/2012 10:26:59 AM</ReportChanged>
+  <ReportCreated>10/17/2012 10:07:27 AM</ReportCreated>
+  <ReportFile />
+  <ReportGuid>e5e8653bf4234d29bdbb0a725f360a0a</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2009.2.500</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
